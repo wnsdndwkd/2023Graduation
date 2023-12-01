@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crc": "^4.3.2",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "node-rtsp-stream": "^0.0.9",
+    "nodemon": "^2.0.22",
+    "recoil": "^0.7.7",
+    "roslib": "^1.3.0",
+    "socket.io": "^4.7.2",
+    "ws": "^8.13.0"
+  }
+}

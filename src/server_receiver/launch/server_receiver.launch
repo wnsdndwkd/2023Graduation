@@ -1,0 +1,16 @@
+<launch>
+
+    <arg name="/output/diagnostic/start_topic_name" default="/diagnostic/start"/>
+    <arg name="/output/diagnostic/emergency_stop_topic_name" default="/diagnostic/emergency_stop"/>
+    <arg name="/output/diagnostic/auto_pilot_topic_name" default="/diagnostic/auto_pilot"/>
+
+    <node name="server_receiver" pkg="server_receiver" type="server_receiver" output="screen">
+        <param name="server_url" value="http://localhost:9000"/>
+
+        <remap from="/output/diagnostic/start" to="$(arg /output/diagnostic/start_topic_name)"/>
+        <remap from="/output/diagnostic/emergency_stop" to="$(arg /output/diagnostic/emergency_stop_topic_name)"/>
+        <remap from="/output/diagnostic/auto_pilot" to="$(arg /output/diagnostic/auto_pilot_topic_name)"/>
+        
+    </node>
+    
+</launch>

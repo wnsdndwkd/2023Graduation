@@ -1,0 +1,24 @@
+<launch>
+    <param name="/use_sim_time" value="/true"/>
+
+    <arg name="/input/diagnostic/control_cmd_topic_name" default="/diagnostic/control_cmd"/>
+    <arg name="/input/diagnostic/start_topic_name" default="/diagnostic/start"/>
+    <arg name="/input/diagnostic/emergency_stop_topic_name" default="/diagnostic/emergency_stop"/>
+    <arg name="/input/diagnostic/auto_pilot_topic_name" default="/diagnostic/auto_pilot"/>
+
+    <arg name="/output/carla/control_cmd_topic_name" default="/carla/ego_vehicle/vehicle_control_cmd"/>
+    <arg name="/output/carla/auto_pilot_topic_name" default="/carla/ego_vehicle/auto_pilot"/>
+
+    <node name="teleoperation_diagnostic" pkg="teleoperation_diagnostic" type="teleoperation_diagnostic" output="screen">
+
+        <remap from="/input/diagnostic/control_cmd" to="$(arg /input/diagnostic/control_cmd_topic_name)"/>
+        <remap from="/input/diagnostic/start" to="$(arg /input/diagnostic/start_topic_name)"/>
+        <remap from="/input/diagnostic/emergency_stop" to="$(arg /input/diagnostic/emergency_stop_topic_name)"/>
+        <remap from="/input/diagnostic/auto_pilot" to="$(arg /input/diagnostic/auto_pilot_topic_name)"/>
+
+        <remap from="/output/carla/control_cmd" to="$(arg /output/carla/control_cmd_topic_name)"/>
+        <remap from="/output/carla/auto_pilot" to="$(arg /output/carla/auto_pilot_topic_name)"/>
+
+    </node>
+    
+</launch>

@@ -1,0 +1,26 @@
+
+(cl:in-package :asdf)
+
+(defsystem "kukirun_msgs-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "Coefficient" :depends-on ("_package_Coefficient"))
+    (:file "_package_Coefficient" :depends-on ("_package"))
+    (:file "Obstacle" :depends-on ("_package_Obstacle"))
+    (:file "_package_Obstacle" :depends-on ("_package"))
+    (:file "Obstacles" :depends-on ("_package_Obstacles"))
+    (:file "_package_Obstacles" :depends-on ("_package"))
+    (:file "PolyFitLane" :depends-on ("_package_PolyFitLane"))
+    (:file "_package_PolyFitLane" :depends-on ("_package"))
+    (:file "Traffic" :depends-on ("_package_Traffic"))
+    (:file "_package_Traffic" :depends-on ("_package"))
+    (:file "Trajectory" :depends-on ("_package_Trajectory"))
+    (:file "_package_Trajectory" :depends-on ("_package"))
+    (:file "TrajectoryPoint" :depends-on ("_package_TrajectoryPoint"))
+    (:file "_package_TrajectoryPoint" :depends-on ("_package"))
+    (:file "Turn" :depends-on ("_package_Turn"))
+    (:file "_package_Turn" :depends-on ("_package"))
+    (:file "VehiclePose" :depends-on ("_package_VehiclePose"))
+    (:file "_package_VehiclePose" :depends-on ("_package"))
+  ))

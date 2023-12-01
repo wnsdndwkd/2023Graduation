@@ -1,0 +1,8 @@
+prefix=/home/junung/git/2023Graduation/devel
+
+Name: server_sender
+Description: Description of server_sender
+Version: 0.0.0
+Cflags: -I/home/junung/git/2023Graduation/src/server_sender/include
+Libs: -L${prefix}/lib 
+Requires: 

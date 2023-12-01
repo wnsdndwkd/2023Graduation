@@ -1,0 +1,2 @@
+carla_msgs:kukirun_msgs:server_receiver:server_sender:teleoperation_diagnostic
+-DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/junung/git/2023Graduation/devel -DCMAKE_INSTALL_PREFIX=/home/junung/git/2023Graduation/install -G Unix Makefiles

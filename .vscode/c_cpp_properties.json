@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/junung/git/2023Graduation/devel/include/**",
+                "/home/junung/git/kukirun/devel/include/**",
+                "/opt/ros/noetic/include/**",
+                "/home/junung/catkin_ws/devel/include/**",
+                "/home/junung/git/kukirun/src/control/control/include/**",
+                "/home/junung/git/kukirun/src/localization/gps_sub/include/**",
+                "/home/junung/git/kukirun/src/lanelet2/Lanelet2/lanelet2_core/include/**",
+                "/home/junung/git/kukirun/src/lanelet2/Lanelet2/lanelet2_io/include/**",
+                "/home/junung/git/kukirun/src/lanelet2/Lanelet2/lanelet2_maps/include/**",
+                "/home/junung/git/kukirun/src/lanelet2/Lanelet2/lanelet2_projection/include/**",
+                "/home/junung/git/kukirun/src/lanelet2/Lanelet2/lanelet2_routing/include/**",
+                "/home/junung/git/kukirun/src/perception/lidar/include/**",
+                "/home/junung/catkin_ws/src/map_maker/include/**",
+                "/home/junung/git/kukirun/src/myahrs_driver/include/**",
+                "/home/junung/git/kukirun/src/planning/include/**",
+                "/home/junung/git/kukirun/src/localization/ublox_f9p/ublox_gps/include/**",
+                "/home/junung/git/kukirun/src/localization/ublox_f9p/ublox_msgs/include/**",
+                "/home/junung/git/kukirun/src/localization/ublox_f9p/ublox_serialization/include/**",
+                "/home/junung/git/kukirun/src/perception/usb_cam/include/**",
+                "/home/junung/git/kukirun/src/vehicle_tf/include/**",
+                "/home/junung/git/kukirun/src/perception/vision/include/**",
+                "/home/junung/catkin_ws/src/week0/node1/include/**",
+                "/home/junung/catkin_ws/src/week0/node2/include/**",
+                "/home/junung/catkin_ws/src/week1/node1/include/**",
+                "/usr/include/**",
+                "/home/junung/git/2023Graduation/src/server_receiver/include/**",
+                "/home/junung/git/2023Graduation/src/server_sender/include/**",
+                "/home/junung/git/2023Graduation/src/teleoperation_diagnostic/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

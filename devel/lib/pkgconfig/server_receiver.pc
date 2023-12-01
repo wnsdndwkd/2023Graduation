@@ -1,0 +1,8 @@
+prefix=/home/junung/git/2023Graduation/devel
+
+Name: server_receiver
+Description: Description of server_receiver
+Version: 0.0.0
+Cflags: -I/home/junung/git/2023Graduation/src/server_receiver/include
+Libs: -L${prefix}/lib 
+Requires: 

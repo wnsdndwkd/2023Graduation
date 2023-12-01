@@ -1,0 +1,15 @@
+<launch>
+
+    <param name="/use_sim_time" value="/true"/>
+    
+    <arg name="/input/carla/odometry_topic_name" default="/carla/ego_vehicle/odometry"/>
+    <arg name="/input/carla/speedometer_topic_name" default="/carla/ego_vehicle/speedometer"/>
+
+    <node name="server_sender" pkg="server_sender" type="server_sender" output="screen">
+        <param name="server_url" value="http://localhost:9000"/>
+
+        <remap from="/input/carla/odometry" to="$(arg /input/carla/odometry_topic_name)"/>
+        <remap from="/input/carla/velocity" to="$(arg /input/carla/speedometer_topic_name)"/>
+    </node>
+    
+</launch>

@@ -1,0 +1,1 @@
+kukirun_msgs/Obstacle[] obstacles

@@ -1,0 +1,8 @@
+prefix=/home/junung/git/2023Graduation/install
+
+Name: kukirun_msgs
+Description: Description of kukirun_msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_generation std_msgs geometry_msgs nav_msgs sensor_msgs

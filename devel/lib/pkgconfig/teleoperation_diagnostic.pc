@@ -1,0 +1,8 @@
+prefix=/home/junung/git/2023Graduation/devel
+
+Name: teleoperation_diagnostic
+Description: Description of teleoperation_diagnostic
+Version: 0.0.0
+Cflags: -I/home/junung/git/2023Graduation/src/teleoperation_diagnostic/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/junung/git/2023Graduation/install
+
+Name: teleoperation_diagnostic
+Description: Description of teleoperation_diagnostic
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
